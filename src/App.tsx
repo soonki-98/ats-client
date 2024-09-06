@@ -1,25 +1,14 @@
 import { GlobalStyle } from './styles/globalStyle';
+import Gnb from './widgets/gnb/ui';
+import Sidebar from './widgets/sidebar/ui';
 
 function App() {
   return (
     <>
       <GlobalStyle />
+      <Gnb />
       <div className="App">
-        <header className="header">
-          <div>로고</div>
-          <div>유저 프로필</div>
-        </header>
-
-        <aside className="left-sidebar">
-          <nav>
-            <ul>
-              <li>이력서 관리 대시보드</li>
-              <li>이력서 업로드</li>
-              <li>사용자 설정</li>
-            </ul>
-          </nav>
-        </aside>
-
+        <Sidebar />
         <main className="main">
           <section className="resume-list">
             <h1>이력서 리스트</h1>
