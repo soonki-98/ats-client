@@ -18,7 +18,7 @@ export default function Resume(props: Props) {
           rejected: <p>불합격</p>,
         }}
       />
-      <a href={props.url}>다운로드</a>
+      <button>이력서 보기</button>
     </ResumeWrapper>
   );
 }
