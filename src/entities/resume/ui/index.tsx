@@ -1,10 +1,11 @@
 import dayjs from 'dayjs';
+import { Link } from 'react-router-dom';
 
 import SwitchCase from '@/shared/ui/SwitchCase';
-import { ResumeWrapper, Title } from './styles';
-import { Link } from 'react-router-dom';
 import { getDynamicPath } from '@/shared/utils/path';
 import { PagePath } from '@/shared/constant/path';
+
+import { ResumeWrapper, Title } from './styles';
 
 interface Props extends Apis.Resume.Get {}
 
@@ -25,14 +26,6 @@ export default function Resume(props: Props) {
             }}
           />
         </p>
-        <button
-          onClick={(ev) => {
-            ev.stopPropagation();
-            alert('이력서 보기');
-          }}
-        >
-          이력서 보기
-        </button>
       </ResumeWrapper>
     </Link>
   );

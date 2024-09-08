@@ -5,10 +5,14 @@ export const ResumeWrapper = styled.div`
   flex-direction: column;
   border: 1px solid #ddd;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 8px;
   width: 180px;
   height: 200px;
   box-sizing: border-box;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  &:hover {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  }
 `;
 
 export const Title = styled.h2`
