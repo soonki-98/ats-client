@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const ResumeWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   border: 1px solid #ddd;
   padding: 20px;
   border-radius: 8px;
@@ -15,7 +16,9 @@ export const ResumeWrapper = styled.div`
   }
 `;
 
-export const Title = styled.h2`
-  font-size: 20px;
-  margin-bottom: 20px;
+export const BottomWrapper = styled.div`
+  display: flex;
+  justify-self: flex-end;
+  justify-content: space-between;
+  margin-top: 20px;
 `;
