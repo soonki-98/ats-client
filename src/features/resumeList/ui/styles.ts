@@ -7,6 +7,7 @@ export const StyledSection = styled.section`
   box-sizing: border-box;
   padding: 20px;
   border: 1px solid #ddd;
+  overflow: hidden;
 `;
 
 export const StyledUl = styled.ul`
@@ -15,4 +16,5 @@ export const StyledUl = styled.ul`
   gap: 20px;
   list-style: none;
   padding: 0;
+  overflow-y: auto;
 `;

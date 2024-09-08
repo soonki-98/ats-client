@@ -6,6 +6,7 @@ import { getDynamicPath } from '@/shared/utils/path';
 import { PagePath } from '@/shared/constant/path';
 import Typography from '@/shared/ui/Typography';
 import { Chip } from '@/shared/ui/Chip';
+import { getDateString } from '@/shared/utils';
 
 import { BottomWrapper, ResumeWrapper } from './styles';
 
@@ -25,7 +26,7 @@ export default function Resume(props: Props) {
         </div>
         <BottomWrapper>
           <Chip color="info">
-            {dayjs(Date.now()).diff(props.uploadDate, 'day')}일 전
+            {getDateString(dayjs(Date.now()).diff(props.uploadDate, 'day'))}
           </Chip>
           <Chip
             color={

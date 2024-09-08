@@ -13,3 +13,13 @@ export const formatBytes = (bytes: number, decimals = 2) => {
 export const getFileExtension = (fileType: string) => {
   return fileType.split('/')[1];
 };
+
+export function getDateString(daysAgo: number): string {
+  if (daysAgo === 0) {
+    return '오늘';
+  } else if (daysAgo === 1) {
+    return '어제';
+  } else {
+    return `${daysAgo}일 전`;
+  }
+}

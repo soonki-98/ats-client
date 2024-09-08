@@ -8,7 +8,6 @@ export const ResumeWrapper = styled.div`
   padding: 20px;
   border-radius: 8px;
   width: 180px;
-  height: 200px;
   box-sizing: border-box;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
   &:hover {
