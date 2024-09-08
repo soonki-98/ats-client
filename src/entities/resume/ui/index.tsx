@@ -1,12 +1,19 @@
 import dayjs from 'dayjs';
 import { ResumeWrapper, Title } from './styles';
 import SwitchCase from '../../../shared/ui/SwitchCase';
+import { useNavigate } from 'react-router-dom';
 
 interface Props extends Apis.Resume.Get {}
 
 export default function Resume(props: Props) {
+  const navigate = useNavigate();
   return (
-    <ResumeWrapper>
+    <ResumeWrapper
+      onClick={() => {
+        navigate({ pathname: `/resume/${props.id}` });
+        alert(props.id);
+      }}
+    >
       <Title>{props.applicantName}</Title>
       <p>{props.jobPosition}</p>
       <p>{dayjs(props.uploadDate).format('YYYY-MM-DD')}</p>
@@ -18,7 +25,14 @@ export default function Resume(props: Props) {
           rejected: <p>불합격</p>,
         }}
       />
-      <button>이력서 보기</button>
+      <button
+        onClick={(ev) => {
+          ev.stopPropagation();
+          alert('이력서 보기');
+        }}
+      >
+        이력서 보기
+      </button>
     </ResumeWrapper>
   );
 }
