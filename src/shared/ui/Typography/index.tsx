@@ -199,6 +199,7 @@ const Typography = styled(
       const { tag = 'span', ...rest } = props;
 
       delete rest.typoSize;
+      delete rest.typoColor;
       delete rest.maxLine;
       delete rest.ellipsis;
       delete rest.stretch;

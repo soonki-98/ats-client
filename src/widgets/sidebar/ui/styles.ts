@@ -5,6 +5,14 @@ export const StyledAside = styled.aside`
   flex-direction: column;
   height: 100%;
   box-sizing: border-box;
-  border: 1px solid #e0e0e0;
   width: 200px;
+  background-color: ${({ theme }) => theme.colors.info_100};
+`;
+
+export const StyledSidebarMenu = styled.li`
+  padding: 20px 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.info_80};
+  }
 `;
