@@ -12,3 +12,12 @@ export const ModalDimmer = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
+export const ModalLayout = styled.div`
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 4px;
+  padding: 20px;
+`;

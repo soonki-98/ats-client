@@ -4,6 +4,7 @@ import { PagePath } from '@/shared/constant/path';
 import { useModal } from '@/shared/ui/modal/useModal';
 
 import { StyledAside } from './styles';
+import UploadResumeModal from '@/features/uploadResume/ui/modal';
 
 export default function Sidebar() {
   const { showModal } = useModal();
@@ -17,7 +18,7 @@ export default function Sidebar() {
           </li>
           <li
             onClick={() => {
-              showModal(<div>asdas</div>);
+              showModal(<UploadResumeModal />);
             }}
           >
             이력서 업로드
