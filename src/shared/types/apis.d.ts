@@ -6,7 +6,7 @@ declare global {
         applicantName: string;
         jobPosition: string;
         uploadDate: number;
-        status: string;
+        status: 'pending' | 'accepted' | 'rejected';
         url: string;
       }
     }

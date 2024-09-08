@@ -4,7 +4,7 @@ export const _resumeList: Apis.Resume.Get[] = [
     applicantName: 'John Doe',
     jobPosition: 'Frontend Developer',
     uploadDate: 1693536000,
-    status: 'Under Review',
+    status: 'pending',
     url: 'https://example.com/resume/johndoe.pdf',
   },
   {
@@ -12,7 +12,7 @@ export const _resumeList: Apis.Resume.Get[] = [
     applicantName: 'Jane Smith',
     jobPosition: 'Backend Developer',
     uploadDate: 1693228800,
-    status: 'Accepted',
+    status: 'accepted',
     url: 'https://example.com/resume/janesmith.pdf',
   },
   {
@@ -20,7 +20,7 @@ export const _resumeList: Apis.Resume.Get[] = [
     applicantName: 'Michael Johnson',
     jobPosition: 'UI/UX Designer',
     uploadDate: 1693622400,
-    status: 'Rejected',
+    status: 'rejected',
     url: 'https://example.com/resume/michaeljohnson.pdf',
   },
   {
@@ -28,7 +28,7 @@ export const _resumeList: Apis.Resume.Get[] = [
     applicantName: 'Emily Davis',
     jobPosition: 'Full Stack Developer',
     uploadDate: 1693708800,
-    status: 'Under Review',
+    status: 'pending',
     url: 'https://example.com/resume/emilydavis.pdf',
   },
   {
@@ -36,7 +36,7 @@ export const _resumeList: Apis.Resume.Get[] = [
     applicantName: 'Chris Brown',
     jobPosition: 'Data Scientist',
     uploadDate: 1693315200,
-    status: 'Accepted',
+    status: 'accepted',
     url: 'https://example.com/resume/chrisbrown.pdf',
   },
 ];
