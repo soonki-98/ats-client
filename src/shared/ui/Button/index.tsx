@@ -4,6 +4,7 @@ export type ButtonProps = {
   filled?: boolean;
   shape?: 'rounded' | 'circle' | 'square';
   variant?: 'default' | 'error' | 'warning' | 'success';
+  stretch?: boolean;
 };
 
 export default function Button(
@@ -15,6 +16,7 @@ export default function Button(
     shape = 'rounded',
     filled = false,
     variant = 'default',
+    stretch = false,
     ...rest
   } = props;
 
@@ -23,6 +25,7 @@ export default function Button(
       shape={shape}
       variant={variant}
       filled={filled}
+      stretch={stretch}
       onClick={onClick}
       {...rest}
     >

@@ -20,7 +20,7 @@ export const BottomButtonGroup = styled.div`
 `;
 
 export const FileList = styled.ul`
-  margin-top: 1rem;
+  margin: 1rem 0;
   max-height: 400px;
   overflow-y: auto;
 `;

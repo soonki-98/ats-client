@@ -1,5 +1,6 @@
 import React, { AllHTMLAttributes, forwardRef } from 'react';
 import styled, { css } from 'styled-components';
+import { ColorVariant } from '../colors';
 
 type Options = {
   maxLine?: number;
@@ -10,6 +11,7 @@ type Options = {
 
 type Props = {
   typoSize?: TypoSizeType;
+  typoColor?: ColorVariant;
 } & Options;
 
 type TypoSizeType =
@@ -167,15 +169,21 @@ const textAlign = (align: Options['align']) => css`
   text-align: ${align};
 `;
 
+export const typoColorCSS = (color: ColorVariant) => css`
+  color: ${({ theme }) => theme.colors[color]};
+`;
+
 export const TypographyCSS = (
   typoSize: TypoSizeType = 'Body3',
+  typoColor: ColorVariant = 'black',
   options?: Options
 ) => css`
   ${fontSize(typoSize)}
   ${fontWeight(typoSize)}
 	${lineHeight(typoSize)}
-	${overflowCSS(typoSize, options)}
-	${options?.align && textAlign(options.align)}
+  ${typoColorCSS(typoColor)};
+  ${overflowCSS(typoSize, options)}
+  ${options?.align && textAlign(options.align)}
 	${options?.stretch && `width: 100%;`}
 `;
 
@@ -200,7 +208,7 @@ const Typography = styled(
   )
 )`
   ${(props) =>
-    TypographyCSS(props.typoSize as TypoSizeType, {
+    TypographyCSS(props.typoSize as TypoSizeType, props.typoColor, {
       ...props,
     })}
 `;

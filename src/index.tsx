@@ -11,6 +11,7 @@ import { PagePath } from '@/shared/constant/path';
 
 import reportWebVitals from './reportWebVitals';
 import ModalProvider from './shared/ui/modal/ModalProvider';
+import { ThemeProvider } from './styles/theme';
 
 const router = createBrowserRouter([
   {
@@ -34,9 +35,11 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <GlobalStyle />
-    <ModalProvider>
-      <RouterProvider router={router} />
-    </ModalProvider>
+    <ThemeProvider>
+      <ModalProvider>
+        <RouterProvider router={router} />
+      </ModalProvider>
+    </ThemeProvider>
   </React.StrictMode>
 );
 
