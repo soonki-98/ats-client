@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
+
 import { PagePath } from '@/shared/constant/path';
-import { StyledAside } from './styles';
 import { useModal } from '@/shared/ui/modal/useModal';
+
+import { StyledAside } from './styles';
 
 export default function Sidebar() {
   const { showModal } = useModal();

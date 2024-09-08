@@ -1,5 +1,3 @@
-import ResumeList from '@/features/resumeList/ui';
-
 function Home() {
   return (
     <>
