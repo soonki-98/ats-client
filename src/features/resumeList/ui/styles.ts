@@ -9,11 +9,6 @@ export const StyledSection = styled.section`
   border: 1px solid #ddd;
 `;
 
-export const Title = styled.h1`
-  font-size: 20px;
-  margin-bottom: 20px;
-`;
-
 export const StyledUl = styled.ul`
   display: grid;
   grid-template-columns: repeat(auto-fit, 180px);
