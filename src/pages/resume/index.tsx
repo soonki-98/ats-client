@@ -1,8 +1,8 @@
 import { useParams } from 'react-router-dom';
+import dayjs from 'dayjs';
 
 import { _resumeList } from '@/__mocks/resumes';
 import { useResume } from '@/entities/resume/hooks/useResume';
-import dayjs from 'dayjs';
 import SwitchCase from '@/shared/ui/SwitchCase';
 
 export default function Resume() {

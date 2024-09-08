@@ -8,14 +8,15 @@ import { GlobalStyle } from '@/styles/globalStyle';
 import withPageLayout from '@/widgets/layouts';
 
 import reportWebVitals from './reportWebVitals';
+import { PagePath } from './shared/constant/path';
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: PagePath.HOME,
     element: withPageLayout(Home),
   },
   {
-    path: '/resume/:id',
+    path: PagePath.RESUME,
     element: withPageLayout(Resume),
   },
 ]);

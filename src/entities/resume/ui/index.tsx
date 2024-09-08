@@ -3,12 +3,14 @@ import dayjs from 'dayjs';
 import SwitchCase from '@/shared/ui/SwitchCase';
 import { ResumeWrapper, Title } from './styles';
 import { Link } from 'react-router-dom';
+import { getDynamicPath } from '@/shared/utils/path';
+import { PagePath } from '@/shared/constant/path';
 
 interface Props extends Apis.Resume.Get {}
 
 export default function Resume(props: Props) {
   return (
-    <Link to={`/resume/${props.id}`}>
+    <Link to={getDynamicPath(PagePath.RESUME, { id: props.id })}>
       <ResumeWrapper>
         <Title>{props.applicantName}</Title>
         <p>{props.jobPosition}</p>
