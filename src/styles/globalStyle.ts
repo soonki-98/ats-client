@@ -7,6 +7,11 @@ export const GlobalStyle = createGlobalStyle`
   body {
   }
 
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
   .App {
     display: flex;
     height: calc(100vh - 60px);
