@@ -11,7 +11,6 @@ export default function Resume(props: Props) {
     <ResumeWrapper
       onClick={() => {
         navigate({ pathname: `/resume/${props.id}` });
-        alert(props.id);
       }}
     >
       <Title>{props.applicantName}</Title>

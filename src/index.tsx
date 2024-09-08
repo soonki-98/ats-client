@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './pages/home';
+import Resume from './pages/resume';
 import { GlobalStyle } from './styles/globalStyle';
 import withPageLayout from './widgets/layouts';
 
@@ -10,6 +11,10 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: withPageLayout(Home),
+  },
+  {
+    path: '/resume/:id',
+    element: withPageLayout(Resume),
   },
 ]);
 
