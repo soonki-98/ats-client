@@ -12,12 +12,6 @@ function App() {
         <Sidebar />
         <main className="main">
           <ResumeList />
-          {/**
-           * DnD나 버튼 클릭으로 이력서 업로드
-           */}
-          <section className="upload-resume">
-            <button>이력서 업로드</button>
-          </section>
         </main>
       </div>
     </>

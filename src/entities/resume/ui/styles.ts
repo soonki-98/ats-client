@@ -6,6 +6,9 @@ export const ResumeWrapper = styled.div`
   border: 1px solid #ddd;
   padding: 20px;
   border-radius: 5px;
+  width: 180px;
+  height: 200px;
+  box-sizing: border-box;
 `;
 
 export const Title = styled.h2`
