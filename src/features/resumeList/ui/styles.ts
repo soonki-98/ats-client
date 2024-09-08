@@ -16,8 +16,8 @@ export const Title = styled.h1`
 
 export const StyledUl = styled.ul`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, 180px);
+  gap: 20px;
   list-style: none;
   padding: 0;
 `;
