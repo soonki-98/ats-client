@@ -1,11 +1,6 @@
-import {
-  ReactNode,
-  createContext,
-  PropsWithChildren,
-  useState,
-  useEffect,
-  useCallback,
-} from 'react';
+import type { ReactNode, PropsWithChildren } from 'react';
+import { useState, useEffect, useCallback, createContext } from 'react';
+
 import { ModalDimmer } from './styles';
 
 interface ModalContextType {
