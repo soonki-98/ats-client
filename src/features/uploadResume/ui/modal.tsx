@@ -1,10 +1,16 @@
+import { useDragAndDrop } from '@/shared/hooks/useDragAndDrop';
 import { ModalLayout } from '@/shared/ui/modal/styles';
+import Typography from '@/shared/ui/Typography';
+
+import { DraggingOverlay } from './styles';
 
 export default function UploadResumeModal() {
+  const { isDragging, dndRef } = useDragAndDrop();
+
   return (
-    <ModalLayout>
-      <h2>이력서 업로드</h2>
-      <p>이력서를 업로드해주세요.</p>
+    <ModalLayout ref={dndRef}>
+      <Typography typoSize="Head6">이력서 업로드</Typography>
+      {isDragging && <DraggingOverlay />}
     </ModalLayout>
   );
 }
