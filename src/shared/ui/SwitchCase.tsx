@@ -1,4 +1,4 @@
-type Component = JSX.Element | null;
+type Component = JSX.Element | string | null;
 
 interface Props<Condition extends string | number> {
   condition: Condition | null | undefined;
@@ -33,11 +33,11 @@ export default function SwitchCase<Condition extends string | number>({
 }: Props<Condition>) {
   try {
     if (condition === null || condition === undefined) {
-      return defaultCase;
+      return <>{defaultCase}</>;
     }
 
-    return cases[condition] ?? defaultCase;
+    return <>{cases[condition] ?? defaultCase}</>;
   } catch {
-    return defaultCase;
+    return <>{defaultCase}</>;
   }
 }
