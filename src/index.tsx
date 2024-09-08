@@ -10,6 +10,7 @@ import withPageLayout from '@/widgets/layouts';
 import { PagePath } from '@/shared/constant/path';
 
 import reportWebVitals from './reportWebVitals';
+import ModalProvider from './shared/ui/modal/ModalProvider';
 
 const router = createBrowserRouter([
   {
@@ -33,7 +34,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <GlobalStyle />
-    <RouterProvider router={router} />
+    <ModalProvider>
+      <RouterProvider router={router} />
+    </ModalProvider>
   </React.StrictMode>
 );
 
