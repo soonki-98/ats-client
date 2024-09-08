@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Home from './pages/home';
-import Resume from './pages/resume';
-import { GlobalStyle } from './styles/globalStyle';
-import withPageLayout from './widgets/layouts';
+
+import Home from '@/pages/home';
+import Resume from '@/pages/resume';
+import { GlobalStyle } from '@/styles/globalStyle';
+import withPageLayout from '@/widgets/layouts';
+
+import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
   {

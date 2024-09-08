@@ -1,7 +1,8 @@
 import dayjs from 'dayjs';
-import { ResumeWrapper, Title } from './styles';
-import SwitchCase from '../../../shared/ui/SwitchCase';
 import { useNavigate } from 'react-router-dom';
+
+import SwitchCase from '@/shared/ui/SwitchCase';
+import { ResumeWrapper, Title } from './styles';
 
 interface Props extends Apis.Resume.Get {}
 

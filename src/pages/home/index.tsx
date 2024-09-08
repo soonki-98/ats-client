@@ -1,4 +1,4 @@
-import ResumeList from '../../features/resumeList/ui';
+import ResumeList from '@/features/resumeList/ui';
 
 function Home() {
   return (

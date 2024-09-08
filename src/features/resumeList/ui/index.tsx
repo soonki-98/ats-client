@@ -1,5 +1,6 @@
+import Resume from '@/entities/resume/ui';
+
 import { _resumeList } from '../../../__mocks/resumes';
-import Resume from '../../../entities/resume/ui';
 import { StyledSection, StyledUl, Title } from './styles';
 
 export default function ResumeList() {
