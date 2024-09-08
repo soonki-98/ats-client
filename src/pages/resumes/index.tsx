@@ -1,13 +1,13 @@
 import ResumeList from '@/features/resumeList/ui';
 
-function Home() {
+function Resumes() {
   return (
     <>
       <main className="main">
-        <div>홈</div>
+        <ResumeList />
       </main>
     </>
   );
 }
 
-export default Home;
+export default Resumes;
