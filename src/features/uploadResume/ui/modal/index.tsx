@@ -8,7 +8,11 @@ import Button from '@/shared/ui/Button';
 import { BottomButtonGroup, DraggingOverlay, FileList } from './styles';
 import UploadedResumeFile from '../UploadedResumeFile';
 
-export default function UploadResumeModal() {
+interface Props {
+  onUpload?: (files: File[]) => void;
+}
+
+export default function UploadResumeModal(props: Props) {
   const { isDragging, dndRef } = useDragAndDrop({
     onFilesDropped(files) {
       const fileList = Array.from(files);
@@ -32,7 +36,14 @@ export default function UploadResumeModal() {
       </FileList>
 
       <BottomButtonGroup>
-        <Button filled>업로드</Button>
+        <Button
+          filled
+          onClick={() => {
+            props.onUpload?.(fileList);
+          }}
+        >
+          업로드
+        </Button>
         <Button variant="default">닫기</Button>
       </BottomButtonGroup>
 

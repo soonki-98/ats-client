@@ -1,4 +1,5 @@
 import Typography from '@/shared/ui/Typography';
+import { formatBytes, getFileExtension } from '@/shared/utils';
 
 import { FileInfo, UploadedResumeFileContainer } from './styles';
 
@@ -13,8 +14,8 @@ export default function UploadedResumeFile(props: Props) {
         {props.file.name}
       </Typography>
       <FileInfo>
-        <Typography>{props.file.size}</Typography>
-        <Typography>{props.file.type}</Typography>
+        <Typography>{formatBytes(props.file.size)}</Typography>
+        <Typography>{getFileExtension(props.file.type)}</Typography>
       </FileInfo>
     </UploadedResumeFileContainer>
   );
