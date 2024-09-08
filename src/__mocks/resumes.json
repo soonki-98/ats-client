@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "applicantName": "John Doe",
+    "jobPosition": "Frontend Developer",
+    "uploadDate": 1693536000,
+    "status": "Under Review",
+    "url": "https://example.com/resume/johndoe.pdf"
+  },
+  {
+    "id": 2,
+    "applicantName": "Jane Smith",
+    "jobPosition": "Backend Developer",
+    "uploadDate": 1693228800,
+    "status": "Accepted",
+    "url": "https://example.com/resume/janesmith.pdf"
+  },
+  {
+    "id": 3,
+    "applicantName": "Michael Johnson",
+    "jobPosition": "UI/UX Designer",
+    "uploadDate": 1693622400,
+    "status": "Rejected",
+    "url": "https://example.com/resume/michaeljohnson.pdf"
+  },
+  {
+    "id": 4,
+    "applicantName": "Emily Davis",
+    "jobPosition": "Full Stack Developer",
+    "uploadDate": 1693708800,
+    "status": "Under Review",
+    "url": "https://example.com/resume/emilydavis.pdf"
+  },
+  {
+    "id": 5,
+    "applicantName": "Chris Brown",
+    "jobPosition": "Data Scientist",
+    "uploadDate": 1693315200,
+    "status": "Accepted",
+    "url": "https://example.com/resume/chrisbrown.pdf"
+  }
+]
