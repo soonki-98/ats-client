@@ -14,7 +14,7 @@ export default function UploadedResumeFile(props: Props) {
         {props.file.name}
       </Typography>
       <FileInfo>
-        <Typography>{formatBytes(props.file.size)}</Typography>
+        <Typography>{formatBytes(props.file.size, 0)}</Typography>
         <Typography>{getFileExtension(props.file.type)}</Typography>
       </FileInfo>
     </UploadedResumeFileContainer>
