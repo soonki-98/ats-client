@@ -60,16 +60,16 @@ export const colorPalette = {
   warning_90: '#b16b00', // Very Dark Yellow
   warning_100: '#8c4d00', // Dark Yellow
 
-  info_10: '#d1ecf1', // Lightest Teal
-  info_20: '#aeeeee', // Light Teal
-  info_30: '#9ed2e4', // Medium Light Teal
-  info_40: '#7dc0d4', // Light Teal
-  info_50: '#17a2b8', // Bootstrap Teal
-  info_60: '#0d8b8a', // Strong Teal
-  info_70: '#017e8f', // Darker Teal
-  info_80: '#016d75', // Dark Teal
-  info_90: '#014d5a', // Very Dark Teal
-  info_100: '#003b41', // Dark Teal
+  info_10: '#e1e9f0', // Lightest Navy
+  info_20: '#c4d3e1', // Light Navy
+  info_30: '#a6bdd2', // Medium Light Navy
+  info_40: '#87a8c2', // Light Navy
+  info_50: '#4a6b8c', // Navy
+  info_60: '#395273', // Strong Navy
+  info_70: '#2e3d5a', // Darker Navy
+  info_80: '#1e2b44', // Dark Navy
+  info_90: '#141b32', // Very Dark Navy
+  info_100: '#0d1a2d', // Darkest Navy
 
   light_10: '#fefefe', // Lightest Gray
   light_20: '#f9f9f9', // Light Gray

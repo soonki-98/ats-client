@@ -61,7 +61,7 @@ export default function UploadResumeModal(props: Props) {
         >
           업로드
         </Button>
-        <Button stretch onClick={hideModal} variant="default">
+        <Button stretch onClick={hideModal} variant="info">
           닫기
         </Button>
       </BottomButtonGroup>

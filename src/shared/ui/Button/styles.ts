@@ -41,6 +41,17 @@ const getButtonStyles = (
         hoverColor: theme.colors.white,
         hoverBorderColor: theme.colors.success_60,
       };
+    case 'info':
+      return {
+        backgroundColor: filled ? theme.colors.info_50 : 'transparent',
+        color: filled ? theme.colors.white : theme.colors.info_50,
+        borderColor: theme.colors.info_50,
+        hoverBackgroundColor: filled
+          ? theme.colors.info_60
+          : theme.colors.info_50,
+        hoverColor: theme.colors.white,
+        hoverBorderColor: theme.colors.info_60,
+      };
     default:
       return {
         backgroundColor: filled ? theme.colors.primary_50 : 'transparent',

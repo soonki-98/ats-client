@@ -3,7 +3,7 @@ import StyledButton from './styles';
 export type ButtonProps = {
   filled?: boolean;
   shape?: 'rounded' | 'circle' | 'square';
-  variant?: 'default' | 'error' | 'warning' | 'success';
+  variant?: 'default' | 'error' | 'warning' | 'success' | 'info';
   stretch?: boolean;
 };
 
