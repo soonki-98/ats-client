@@ -12,3 +12,15 @@ export const DraggingOverlay = styled.div`
   align-items: center;
   z-index: 9999;
 `;
+
+export const BottomButtonGroup = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+`;
+
+export const FileList = styled.ul`
+  margin-top: 1rem;
+  max-height: 400px;
+  overflow-y: auto;
+`;
