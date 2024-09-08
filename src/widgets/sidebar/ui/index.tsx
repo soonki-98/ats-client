@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 
 import { PagePath } from '@/shared/constant/path';
 import { useModal } from '@/shared/ui/modal/useModal';
+import Typography from '@/shared/ui/Typography';
+import UploadResumeModal from '@/features/uploadResume/ui/modal';
 
 import { StyledAside, StyledSidebarMenu } from './styles';
-import UploadResumeModal from '@/features/uploadResume/ui/modal';
-import Typography from '@/shared/ui/Typography';
 
 export default function Sidebar() {
   const { showModal } = useModal();
@@ -14,13 +14,22 @@ export default function Sidebar() {
     <StyledAside>
       <nav>
         <ul>
-          <StyledSidebarMenu>
-            <Link to={PagePath.RESUME_LIST}>
+          <Link to={PagePath.HOME}>
+            <StyledSidebarMenu>
+              <Typography typoColor="white" typoSize="Body1">
+                대시보드
+              </Typography>
+            </StyledSidebarMenu>
+          </Link>
+
+          <Link to={PagePath.RESUME_LIST}>
+            <StyledSidebarMenu>
               <Typography typoColor="white" typoSize="Body1">
                 이력서 목록
               </Typography>
-            </Link>
-          </StyledSidebarMenu>
+            </StyledSidebarMenu>
+          </Link>
+
           <StyledSidebarMenu
             onClick={() => {
               showModal(<UploadResumeModal />);
@@ -30,6 +39,7 @@ export default function Sidebar() {
               이력서 업로드
             </Typography>
           </StyledSidebarMenu>
+
           <StyledSidebarMenu>
             <Typography typoColor="white" typoSize="Body1">
               사용자 설정
